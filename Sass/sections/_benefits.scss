@@ -1,0 +1,21 @@
+
+ .benefits--list{
+     display: flex;
+     gap: 30px;
+     flex-basis: content;
+
+ }
+
+ .benefits__icon-div {
+     display: flex;
+     width: 270px;
+     height: 120px;
+     background-color: rgba(245, 244, 250, 1);
+     margin-bottom: 30px;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .benefits__icon {
+     align-items: center;
+ }

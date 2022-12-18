@@ -1,0 +1,162 @@
+.site-nav {
+    display: flex;
+    gap: 50px;
+
+}
+
+.auth-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 40px;
+
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.container.header-nav {
+    display: flex;
+    height: 80px;
+}
+
+.logo {
+    color: var(--primary-text-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    text-decoration: none;
+    text-align: start;
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.spanlogo {
+    color: var(--accent-color);
+}
+
+.navigation.current {
+    color: var(--accent-color);
+
+   &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    opacity: 1;
+    }
+
+}
+
+
+
+.navigation {
+    position: relative;
+
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: block;
+
+    transition: color 250ms var(--cub);
+            
+            &:hover,
+            &:focus {
+            color: var(--accent-color);
+
+            }
+}
+
+.navigation.non-current::after {
+    content: "";
+    position: absolute;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+
+    opacity: 0.5;
+    transform: scaleY(0);
+    transition: opacity 250ms var(--cub), transform 250ms var(--cub);
+
+}
+
+.navigation.non-current:hover::after,
+.navigation.non-current:focus::after {
+    opacity: 0.7;
+    transform: scaleY(1);
+}
+
+
+
+.contact {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    font-style: normal;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+
+    transition: color 250ms var(--cub);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.head-icon {
+    fill: var(--secondary-text-color);
+
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+
+    transition: fill 250ms var(--cub);
+
+    .contact:hover & {
+    fill: var(--accent-color);
+    }
+}
+
+
+

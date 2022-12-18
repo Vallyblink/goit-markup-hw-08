@@ -1,0 +1,53 @@
+
+
+.section--title {
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding {
+    padding-top: 0px;
+
+}
+
+ .column-title {
+     color: var(--primary-text-color);
+
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     text-transform: uppercase;
+
+     margin-bottom: 10px;
+ }
+
+ .column-descr {
+     color: var(--secondary-text-color);
+
+     font-size: 14px;
+     line-height: 1.71;
+ }
+
+
+.list {
+    display: flex;
+    gap: 30px;
+
+}
+
+ footer {
+     background-color: rgba(47, 48, 58, 1);
+     padding: 60px 0;
+ }

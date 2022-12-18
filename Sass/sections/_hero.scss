@@ -1,0 +1,55 @@
+.main {
+    background-color: rgba(47, 48, 58, 1);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.main--container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mainimg.jpg);
+    background-size: contain;
+    max-width: 1600px;
+    padding: 200px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+
+}
+
+.main__title {
+    color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 696px;
+}
+
+.main__button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    display: block;
+    margin: 0 auto;
+    width: 216px;
+    height: 50px;
+}
