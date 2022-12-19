@@ -1,8 +1,20 @@
 .work{
+     @media screen and (max-width: 1199px) {
+            display: none;
+    }
     padding: 0;
 }
+
+.work__list{
+    display: flex;
+    gap: 30px;
+}
+
+.work__item{
+    width: calc((100% - 60px) / 3);
+}
+
 .work__card {
-    width: 370px;
     height: 294px;
     position: relative;
 }

@@ -2,19 +2,39 @@
 
 .team--list {
     display: flex;
-    gap: 30px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
 }
 
 .team--item {
-    text-align: center;
-
+    max-width: 450px;
     background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @include tablet {
+            width: calc((100% - 30px) / 2);
+        }
+    
+        @include desktop {
+            width: calc((100% - 90px) / 4);
+        }
 
 }
 
 .team--card{
-    padding-top: 30px;
-    padding-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 24px;
+        text-align: center;
+    
+        @include desktop {
+            padding: 30px 30px;
+        }
 }
 
 .team.section {
@@ -30,6 +50,7 @@
 
     margin-bottom: 10px;
     margin-right: 0px;
+  
 }
 
 .team--card__text {
@@ -43,9 +64,9 @@
 
 .social {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
+    flex-basis: calc((100% - 30px) / 4);
 }
 
 .social__item {
@@ -66,10 +87,18 @@
     transition: background-color 250ms var(--cub);
         
     
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-        }
+        &:active {
+                background-color: var(--accent-color)
+            
+            }
+        
+            @include desktop {
+        
+                &:hover,
+                &:focus {
+                    background-color: var(--accent-color)
+                }
+            }
 
 }
 
@@ -77,9 +106,17 @@
     fill: rgba(175, 177, 184, 1);
     transition: fill 250ms var(--cub);
        
-        .social__link:hover & {
-            fill: var(--white-color);
-        }
+        .social__link:active & {
+                fill: var(--white-color);
+            }
+        
+            @include desktop {
+        
+                .social__link:hover &,
+                .social__link:focus & {
+                    fill: var(--white-color)
+                }
+            }
 
 }
 

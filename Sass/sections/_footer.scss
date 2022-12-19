@@ -1,17 +1,32 @@
 
 
  .footer-container {
-     display: flex;
-     align-items: baseline;
-     justify-content: center;
+   
+    @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+    
+        @include desktop {
+            gap: 70px;
+        }
  }
 
  .footer-nav {
-     margin-right: 70px;
+     margin-bottom: 60px;
+
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
+	@include tablet {
+		width: 232px;
+	}
  }
 
  .footer-logo {
-     display: inline-block;
+     display: block;
      color: rgba(255, 255, 255, 1);
 
      font-family: 'Raleway';
@@ -19,7 +34,11 @@
      font-size: 26px;
      line-height: 1.71;
      text-decoration: none;
-     margin-bottom: 20px;
+     margin-bottom: 28px;
+
+     	@media screen and (max-width: 1199px) {
+			text-align: center;
+		}
 
  }
 
@@ -61,20 +80,21 @@
      text-transform: uppercase;
      color: var(--white-color);
      text-decoration: none;
-     align-self: start;
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+        margin-bottom: 20px;
  }
 
  .footer-link {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: center;
-     width: 206px;
-     height: 80px;
+    margin-bottom: 60px;
  }
 
  .footer .social {
-     margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
  }
  .social__icon.footer {
      fill: var(--white-color)
@@ -83,18 +103,32 @@
  .social__item.footer {
      background-color: rgba(255, 255, 255, 0.1);
      border-radius: 50%;
+    width: 44px;
+    max-height: 44px;
+       
  }
 
  .footer-form {
-     margin-left: auto;
+    @include desktop {
+            margin-left: auto;
+        }
  }
 
  .telegram-form {
-     display: flex;
-     flex-direction: row;
-     justify-content: baseline;
-     gap: 12px;
-     padding-top: 20px;
+        display: flex;
+        gap: 12px;
+    
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        @include desktop{
+                flex-direction: row;
+                justify-content: baseline;
+                gap: 12px;
+                padding-top: 20px;
+        }
  }
 
  .telegram-title {
@@ -106,18 +140,32 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: var(--white-color);
+        @media screen and (max-width: 1199px) {
+                text-align: center;
+            }
 
  }
 
  .footer-input {
      height: 50px;
-     width: 358px;
+     width: 100%;
+    padding: 15px 16px;
+    color: var(--white-color);
      background-color: transparent;
      border: 1px solid rgba(255, 255, 255, 0.3);
      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
      border-radius: 4px;
-     color: var(--white-color);
+     margin-top: 20px;
+        @include mobile {
+            width: 450px;
+        }
+    
+        @include desktop {
+            width: 358px;
+        }
 
+            
+     
             &::placeholder {
                 font-family: 'Roboto';
                 font-style: normal;
@@ -149,4 +197,5 @@
  }
  .telegram-parent .btn-modalsubmit {
      margin-top: 0;
+
  }
