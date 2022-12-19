@@ -11,7 +11,6 @@
 .modal {
     position: absolute;
 
-    width: 528px;
     min-height: 581px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
@@ -19,10 +18,27 @@
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -40vh);
+    width: 90%;
+    height: 609px;
+    padding: 20px;
     transition: transform 300ms var(--cub);
 
-    padding: 40px;
+    @include mobile {
+            width: 450px;
+            height: 609px;
+            padding: 40px;
+        }
+    
+        @include desktop {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 528px;
+            height: 581px;
+        }
+
+    
 
 }
 
@@ -39,13 +55,36 @@
 
 .close-modal {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+        background-color: $clr-bg-primary;
+        border: 1px solid $clr-modal-btn-border;
+        border-radius: 50%;
+        cursor: pointer;
+        color: $clr-header-logo;
+        transition: color $transition;
+    
+        &__icon {
+            fill: currentColor;
+        }
+    
+        &:active {
+            color: $clr-accent;
+        }
+    
+        @include desktop {
+    
+            &:hover,
+            &:focus {
+                color: $clr-accent;
+            }
+        }
 }
 
 .modal-btn {
@@ -55,15 +94,17 @@
 }
 
 .modal-title {
+    display: block;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--primary-text-color);
-
-    margin-bottom: 12px;
+    @include desktop {
+        line-height: calc(23 / 20);
+    }
 
 }
 

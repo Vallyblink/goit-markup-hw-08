@@ -1,37 +1,63 @@
-.main {
-    background-color: rgba(47, 48, 58, 1);
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
 
-.main--container {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mainimg.jpg);
-    background-size: contain;
-    max-width: 1600px;
-    padding: 200px 0px;
+.main {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
+    padding: 118px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-descktop.jpg);  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+
+    @include pixel-x2 {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-descktop2px.jpg);
+        background-repeat: no-repeat;        }
+    
+        @include mobile {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-mob.jpg);
+    
+            @include pixel-ratio-x2 {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-mob2px.jpg);
+            }
+        }
+    
+        @include tablet {
+            min-width: 768;
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-tablet.jpg);
+    
+            @include pixel-ratio-x2 {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-tablet2px.jpg);
+            }
+        }
+    
+        @include desktop {
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+        }
 
 }
 
 .main__title {
     color: var(--white-color);
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 696px;
+    max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42 / 26);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        @include desktop {
+                max-width: 696px;
+                font-size: 44px;
+                line-height: calc(60 / 44);
+            }
 }
 
 .main__button {
@@ -52,4 +78,5 @@
     margin: 0 auto;
     width: 216px;
     height: 50px;
+    padding: 10px 24px;
 }
