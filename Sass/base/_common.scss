@@ -27,7 +27,6 @@
 }
 
 .logo {
-    display: inline-block;
     color: var(--primary-text-color);
     font-family: 'Raleway';
     font-weight: 700;
@@ -35,13 +34,10 @@
     line-height: 1.71;
     text-decoration: none;
     text-align: start;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 24px;}
-
-        .spanlogo {
-            color: var(--accent-color);
-        }
+    &__span {
+    color: var(--accent-color);
+    }
+}
 
 .section.no-padding {
     padding-top: 0px;
