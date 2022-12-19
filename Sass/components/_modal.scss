@@ -3,6 +3,8 @@
     width: 100%;
     height: 100%;
     top: 0px;
+    left: 0;
+    overflow: auto;
     background-color: rgba(0, 0, 0, 0.2);
     transition: visibility 300ms var(--cub), opacity 300ms var(--cub);
 }
@@ -54,10 +56,22 @@
 }
 
 
-.modal-btn {
-    fill: black;
-    width: 11px;
-    height: 11px;
+
+.close-modal{
+    position: absolute;
+	top: 8px;
+	right: 8px;
+	border: none;
+	padding: 6px;
+    background-color: var(--white-color);
+
+
+    &-btn {
+        fill: black;
+        width: 11px;
+        height: 11px;
+    }
+
 }
 
 .modal-title {
@@ -196,12 +210,19 @@
 
 .checkbox {
     position: relative;
-    width: 406px;
+    width: 370px;
     height: 17px;
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    @include modile {
+        width: 370px;
+    }
+    
+    @include desktop{
+        width: 425px;
+    }
 
 }
 

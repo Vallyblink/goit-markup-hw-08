@@ -23,14 +23,14 @@
             <a class="header--logo logo" href="WebStudio"> <span class="logo__span">Web</span>Studio</a>
                 <button type="button" class="menu-button" aria-expanded="true" data-menu-button>
                     <svg width="40" height="40" class="menu-button__icon">
-                        <use href="./images/icons.svg#icon-menu-mob" class="icon__menu"></use>
-                        <use href="./images/icons.svg#icon-close" class="icon__cross"></use>
+                        <use href="./images/icons.svg#icon-menu-mob" class="icon__menu-open"></use>
+                        <use href="./images/icons.svg#icon-close" class="icon__menu-close"></use>
                     </svg>
                 </button>
             
             <div data-menu class="header__menu">
-                <nav class="navigation">   
-                    <ul class="navigation__nav">
+                <nav class="nav">   
+                    <ul class="navigation__list">
                         
                         <li class="header-li"><a class="navigation__page current" href="./index.html">Студія</a> </li>
                         <li class="header-li"><a class="navigation__page non-current" href="./portfolio.html">Портфоліо</a></li>
@@ -518,7 +518,7 @@
   <div class="backdrop is-hidden" data-modal>
         <div class="modal">
          <button class="close-modal" data-modal-close>
-             <svg class="modal-btn"  >
+             <svg class="close-modal__btn" width="16px" height="18px" >
                  <use href="./images/icons.svg#icon-Vector" ></use>
              </svg>
          </button>
@@ -537,7 +537,7 @@
             <label for="tel" class="modal-label">Телефон</label>
             <div class="icon-parent">
                 <input type="tel" name="tel" class="modal-input"  id="tel"> 
-                <svg class="input-icon" width="18px" height="18px">
+                <svg class="input-icon" width="11px" height="11px">
                     <use href="./images/icons.svg#icon-telef"></use>
                 </svg>
             </div>
