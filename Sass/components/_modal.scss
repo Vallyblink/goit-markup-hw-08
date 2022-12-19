@@ -53,39 +53,6 @@
 
 }
 
-.close-modal {
-    position: absolute;
-        top: 8px;
-        right: 8px;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        width: 30px;
-        height: 30px;
-        padding: 6px;
-        background-color: $clr-bg-primary;
-        border: 1px solid $clr-modal-btn-border;
-        border-radius: 50%;
-        cursor: pointer;
-        color: $clr-header-logo;
-        transition: color $transition;
-    
-        &__icon {
-            fill: currentColor;
-        }
-    
-        &:active {
-            color: $clr-accent;
-        }
-    
-        @include desktop {
-    
-            &:hover,
-            &:focus {
-                color: $clr-accent;
-            }
-        }
-}
 
 .modal-btn {
     fill: black;

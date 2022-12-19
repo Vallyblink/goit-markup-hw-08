@@ -1,3 +1,7 @@
+.client-container{
+    padding-left: 0;
+    padding-right: 0;
+}
 .client-main-box{
     display: flex;
 	flex-wrap: wrap;
@@ -12,9 +16,9 @@
 	@include tablet {
 		flex-basis: 226px;
 	}
-	// @include desktop {
-	// 	flex-basis: 170px;
-	// }
+	@include desktop {
+		flex-basis: 170px;
+	}
 }
 
 .client-title {
@@ -26,7 +30,6 @@
     text-transform: initial;
 
     color: var(--primary-text-color);
-
     margin-bottom: 50px;
 
 }
