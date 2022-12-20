@@ -152,6 +152,12 @@ footer {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
   transition: visibility 300ms var(--cub), opacity 300ms var(--cub);
+  padding-top: 94px;
+}
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding-top: 208px;
+  }
 }
 
 .modal {
