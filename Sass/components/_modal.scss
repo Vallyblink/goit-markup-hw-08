@@ -210,16 +210,16 @@
 
 .checkbox {
     position: relative;
-    width: 370px;
+    
     height: 17px;
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    @include modile {
+
+    @include mobile{
         width: 370px;
     }
-    
     @include desktop{
         width: 425px;
     }
@@ -279,8 +279,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     border: 2px solid var(--secondary-text-color);
     border-radius: 2px;
     transition: border;

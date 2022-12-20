@@ -4,30 +4,30 @@
     margin-left: auto;
     margin-right: auto;
     padding: 118px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero-img-mob.jpg);  
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero-img-mob.jpg);  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-position: center;
 
     @include pixel-x2 {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero-img-mob2px.jpg); 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero-img-mob2px.jpg); 
         background-repeat: no-repeat;        }
     
         @include mobile {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-tablet.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tablet.jpg);
     
             @include pixel-x2 {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img-tablet2px.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-tablet2px.jpg);
             }
         }
     
         @include tablet {
             min-width: 768;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero-img-descktop.jpg); 
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero-img-descktop.jpg); 
     
             @include pixel-x2 {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/hero-img-descktop2px.jpg); 
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero-img-descktop2px.jpg); 
             }
         }
     
