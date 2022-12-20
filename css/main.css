@@ -120,6 +120,10 @@ footer {
   padding: 60px 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -636,7 +640,7 @@ footer {
 
 .header-socials {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0;
   width: auto;
 }
@@ -1129,6 +1133,7 @@ footer {
   line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-transform: initial;
+  text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
