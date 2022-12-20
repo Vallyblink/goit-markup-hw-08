@@ -88,6 +88,7 @@
 
 
 .navigation__page {
+	position: relative;
     text-decoration: none;
     color: var(--primary-text-color);
 
@@ -120,7 +121,7 @@
 }
 
 .non-curent{
-	@include tablet{
+	
 	
 		.navigation__page &::after {
 		content: "";
@@ -138,15 +139,15 @@
 		transform: scaleY(0);
 		transition: opacity 250ms var(--cub), transform 250ms var(--cub);}
 		
-		.navigation__page &:hover::after,
-		.navigation__page &:focus::after {
+		.navigation__page &::after:hover,
+		.navigation__page &::after:focus {
 			 opacity: 0.7;
     		transform: scaleY(1);
 }
 }
 		
 	
-	}
+	
 
 
 
